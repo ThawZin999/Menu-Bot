@@ -22,6 +22,7 @@ export const setupCommands = (bot) => {
   setupFileHandlers(bot);
   setupVideoHandlers(bot);
   setupContactCommand(bot);
+  // Setup handlers
 
   bot.hears("Back", (ctx) => {
     ctx.reply("Main Menu:", getMainMenu());
