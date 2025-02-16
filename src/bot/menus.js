@@ -2,28 +2,15 @@ import { Markup } from "telegraf";
 
 export const getMainMenu = () =>
   Markup.keyboard([
-    ["Hikaruမှ ဝယ်ယူနိုင်သည့်ဂျပန်စာအုပ်များ"],
-    ["Menu", "Random Message"],
-    ["Fileများရယူရန်", "Multiple Messages"],
-    ["Kotobaများကျက်ရန်"],
+    ["Fileများရယူရန်", "Kotobaများကျက်ရန်"],
     ["Video သင်ခန်းစာများလေ့လာရန်"],
-    ["Forward Message"],
+    ["Hikaruမှ ဝယ်ယူနိုင်သည့်ဂျပန်စာအုပ်များ"],
+    ["သင်ကြားပုံများ"],
   ])
     .resize()
     .oneTime(false);
 
 export const getInlineKeyboard = () =>
   Markup.inlineKeyboard([
-    [
-      Markup.button.url(
-        "Admin နှင့်တိုက်ရိုက်စကားပြောမည်",
-        "https://t.me/hikarujls"
-      ),
-    ],
-    [
-      Markup.button.url(
-        "သင်တန်စုံစမ်းရန်",
-        "https://m.me/hikarujapaneseschool"
-      ),
-    ],
+    [Markup.button.url("Admin နှင့်ဆက်သွယ်မည်", "https://t.me/hikarujls")],
   ]);

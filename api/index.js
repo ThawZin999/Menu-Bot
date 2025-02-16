@@ -1,7 +1,6 @@
 import express from "express";
 import { Telegraf } from "telegraf";
 import { setupCommands } from "../src/bot/commands.js";
-import { setupHandlers } from "../src/bot/handlers.js";
 import { BOT_TOKEN, PORT } from "../src/config.js";
 
 const app = express();
@@ -32,4 +31,3 @@ if (process.argv[1].endsWith(import.meta.url.slice(7))) {
 
 // Setup commands and handlers
 setupCommands(bot);
-setupHandlers(bot);
